@@ -1,0 +1,5 @@
+Options -Indexes
+RewriteEngine On
+RewriteCond %{THE_REQUEST} /index\.php [NC]
+RewriteRule ^(.*?)index\.php$ /projekrpl/$1 [L,R=302,NC,NE]
+
